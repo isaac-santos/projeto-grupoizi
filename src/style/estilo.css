@@ -247,7 +247,7 @@ section.backgr1 {
     background-position: center center;
     background-repeat: no-repeat;
     height: 550px;
-    width: 100%;
+    width: 100vw;
 }
 
 section.backgr1 > div {

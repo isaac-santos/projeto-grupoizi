@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo IZI</title>
+    <link rel="stylesheet" href="src/style/estilo.css">
+    <script src="src/JavaScript/animações.Js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logoCab">
+            <a href="index.html"><img id="logo" src="src/img/logo-teste.png" alt="logo da clinica"></a>
+        </div>
+        <div class="redeSocial">
+            <a href="#"><img src="src/img/facebook.jpg" alt="facebook da clinica"></a><span>Facebook</span>
+            &nbsp;&nbsp;
+            <a href="#"><img src="src/img/instagram.jpg" alt="instagram da clinica"></a><span>Instagram</span>
+        </div>
+        <nav>
+            <!-- menu normal -->
+            <div id="menu">
+                <div class="container">
+                    <img src="src/img/Clinica.png" alt="imagem para informações da clinica">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="#">Sobre a IZI</a></li>
+                            <li><a href="#">Convênios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <img src="src/img/gestao.png" alt="imagem para informações da equipe">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="#">Médicos</a></li>
+                            <li><a href="#">Conquistas</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="src/img/distintivo.png" alt="imagem para informações das especialidades">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="#">especialidades</a></li>
+                            <li><a href="#">Serviços</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <a href="#"><img src="src/img/contato.png" alt="imagem para informações do contato"></a>
+                </div>
+            </div>
+            
+            <!-- menu responsivo-->
+            <button id="menu-btn" onclick="openNav()">☰</button>
+            <div id="camadas-resp">
+                <ul>
+                    <li>
+                        <button class="menu-filho" onclick="openClinic()">Clinica</button>
+                        <ul id="clinica-resp" class="sub-menu">
+                            <li><a href="#">Sobre a IZI</a></li>
+                            <li><a href="#">Convênios</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <button class="menu-filho" onclick="openTeam()">Equipe</button>
+                        <ul id="equipe-resp" class="sub-menu">
+                            <li><a href="#">Médicos</a></li>
+                            <li><a href="#">Conquistas</a></li>
+                        </ul>
+                        
+                    </li>
+
+                    <li>
+                        <button class="menu-filho" onclick="openOrde()">Credenciamento</button>
+                        <ul id="especialidades-resp" class="sub-menu">
+                            <li><a href="#">Especialidades</a></li>
+                            <li><a href="#">Serviços</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="linhaCab" class="animlinha"></div>
+    </header>
+
+    <main>
+        <section class="backgr1">
+            <div>
+                <h2>Seja bem-vindo(a) à Clínica Grupo Izi!</h2>
+                <p>Nossa equipe está aqui para cuidar da sua saúde com dedicação, tecnologia e um atendimento humanizado. Oferecemos uma ampla gama de serviços médicos, sempre com o compromisso de promover o bem-estar e a qualidade de vida dos nossos pacientes.<br><br>
+                Conte conosco para proporcionar a melhor experiência em saúde e atendimento personalizado.Estamos prontos para cuidar de você!
+                <br><br>
+                Grupo Izi – Cuidando de você em cada detalhe.</p>
+            </div>
+        </section>
+        <div id="whatsapp">
+            <a href="https://wa.me/5571991728328" target="_blank" ><img src="src/img/whatsapp.png" alt="acesso ao whatsapp"></a>
+        </div>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>

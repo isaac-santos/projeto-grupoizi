@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* Animações */
 @keyframes linha {
@@ -142,7 +143,7 @@ button#menu-btn {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 4px 39px 0px 0px;
+    margin: 4px 20px 0px 0px;
     font-size: 1.5em;
     background-color: white;
     border: 0px;
@@ -156,6 +157,23 @@ div#camadas-resp {
     padding-bottom: 45px;
     margin-top: -42px;
     display: none;
+    font-family: "Merriweather", serif;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+div#camadas-resp.show {
+    display: block;
+    height: 110px;
+    opacity: 1;
+}
+
+button {
+    font-family: "Merriweather", serif;
+    font-size: 1em;
+    color: var(--cor3);
 }
 
 button.menu-filho {
@@ -163,18 +181,16 @@ button.menu-filho {
     border: 0px;
     cursor: pointer;
     font-weight: bold;
-
 }
 
 ul.sub-menu > li > a {
     position: relative;
-    color: black;
+    color: var(--cor2);
     text-decoration: none;
 }
 
-
 div#camadas-resp > ul > li > a {
-    color: black;
+    color: var(--cor3);
     text-decoration: none;
     font-weight: bold;
 }
@@ -279,6 +295,5 @@ section.backgr1 > div > h2 {
 div#whatsapp {
     position: fixed;
     right: 12px;
-    bottom: 10px;    
-    opacity: 42%;
+    bottom: 10px;
 }

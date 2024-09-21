@@ -229,9 +229,6 @@ main {
     top: -42px;
 }
 
-section > p {
-    color: transparent;
-}
 
 section.backgr1 {
     background-image: url(../img/background-1-grand.jpg);

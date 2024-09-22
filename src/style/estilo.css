@@ -207,7 +207,7 @@ ul#especialidades-resp {
     display: none;
 }
 
-@media (max-width: 665px) {
+@media (max-width: 790px) {
 
     /*----------------------------*/
     /* Menu responsivo */
@@ -252,23 +252,75 @@ section.backgr1 {
     background-repeat: no-repeat;
     height: 550px;
     width: 100vw;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.301);
 }
 
 section.backgr1 > div {
     padding: 30px;
     max-width: 389px;
-    text-align: justify;
     line-height: 1.4em;
     background-color: rgba(255, 255, 255, 0.432);
     position: absolute;
     top: 80px;
     left: 5px;
     border-radius: 10px;
-    word-spacing: 0px;
+
 }
 
 section.backgr1 > div > h2 {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    color: var(--cor4);
+}
+
+section.backgr1 > div > p {
+    text-align: justify;
+    word-spacing: 0px;
+}
+
+section#informacao {
+    padding: 20px 0px 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+section#informacao > div {
+    display: inline-block;
+}
+
+section#informacao > div.escolha {
+    max-width: 300px;
+    margin-left: 35px;
+    background-color: var(--cor3);
+    color: white;
+    padding: 20px;
+    border-radius: 0px 20px;
+    text-shadow: 2px 3px 0px rgba(255, 255, 255, 0.123);
+}
+
+section#informacao > div.escolha > h3 {
+    padding-bottom: 20px;
+}
+
+section#informacao > div > img {
+    height: 40px;    
+}
+
+section#informacao > div > h2 {
+    padding-bottom: 20px;
+    display: inline-block;
+    color: var(--cor3);
+}
+
+section#informacao > div > ul {
+    list-style: none;
+    text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.295);
+    font-weight: 500;
+    padding-left: 50px;
+    color: var(--cor5);
+}
+
+section#informacao > div > ul > li {
+    padding-bottom: 5px;
 }
 
 @media (max-width: 400px) {
@@ -289,6 +341,14 @@ section.backgr1 > div > h2 {
         word-spacing: 0px;
     }
 }
+
+@media (max-width: 375px) {
+
+    section#informacao > div > h2 {
+        font-size: 1.2em;
+    }
+}
+
 /*------------------------------*/
     /* acesso ao whatsapp */
 /*------------------------------*/

@@ -445,13 +445,23 @@ section > div.final > h2 {
 section > div.final > ul {
     list-style: none;
     display: inline-block;
+    padding-top: 20px;
 }
 
 section > div.final > ul > li {
     display: inline-block;
-    padding: 3px;
+    padding: 0px 6px;
 }
 
+section > div.final > img {
+    width: 60px;
+    padding-top: 20px;
+}
+
+section > div.final > ul > li > a:hover{
+    background-color: #8CA449;
+    zoom: 1;
+}
 
 @media (max-width: 1150px) {
     img.profgr {

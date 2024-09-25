@@ -63,3 +63,42 @@ function openOrde(){
         menu.style.display = 'none';
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cardList = document.querySelector('.card-list');
+    const cardItems = document.querySelectorAll('.card-item');
+    const prevBtn = document.querySelector('.espcialidade-ant');
+    const nextBtn = document.querySelector('.especialidade-sub');
+
+    if (!cardList || !cardItems.length || !prevBtn || !nextBtn) {
+        console.error("Um ou mais elementos não foram encontrados.");
+        return; // Sai se não encontrar os elementos
+    }
+
+    let counter = 0;
+    const size = cardItems[0].offsetWidth + parseInt(getComputedStyle(cardItems[0]).marginRight);
+
+    // Função para avançar
+    function proximo() {
+        if (counter < cardItems.length - 1) {
+            counter++;
+        } else {
+            counter = 0; // Reseta para o início
+        }
+        cardList.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+
+    // Função para voltar
+    function movePrev() {
+        if (counter > 0) {
+            counter--;
+        } else {
+            counter = cardItems.length - 1; // Vai para o final
+        }
+        cardList.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+
+    // Configurando os botões
+    prevBtn.onclick = movePrev;
+    nextBtn.onclick = proximo;
+});

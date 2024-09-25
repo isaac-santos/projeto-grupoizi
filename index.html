@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo IZI</title>
     <link rel="stylesheet" href="src/style/estilo.css">
-    <script src="src/JavaScript/animações.Js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
@@ -40,7 +39,7 @@
                     <img src="src/img/distintivo.png" alt="imagem para informações das especialidades">
                     <div class="conteudo">
                         <ul>
-                            <li><a href="#">especialidades</a></li>
+                            <li><a href="#">Especialidades</a></li>
                             <li><a href="#">Serviços</a></li>
                         </ul>
                     </div>
@@ -121,6 +120,31 @@
             </div>
         </section>
         <div class="linhaMain"></div>
+        <section class="cont-list">
+            <button class="espcialidade-ant" onclick="anterior()">&#10094;</button>
+            <div class="slider-wrapper">
+                <div class="card-list">
+                    <div class="card-item">
+                        <img src="src/img/angiologia-img.jpeg" alt="imagem de angiologia" class="user-image">
+                        <h3 class="nome-espec">Angiologia</h3>
+                        <p class="descricao">Profissão da saúde responsável pelo tratamento de doenças que acometem os vasos sanguíneos, como artérias, veias e vasos linfáticos.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="src/img/img-Endocrinologia.jpeg" alt="imagem de angiologia" class="user-image">
+                        <h3 class="nome-espec">Endocrinologia</h3>
+                        <p class="descricao">Profissão da saúde responsável pelo tratamento das glândulas do corpo humano responsáveis por produzir e secretar os hormônios que auxiliam o metabolismo, o desenvolvimento e crescimento do corpo e a reprodução humana.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="src/img/img-Nutrição.jpeg" alt="imagem de angiologia" class="user-image">
+                        <h3 class="nome-espec">Nutrição</h3>
+                        <p class="descricao">Profissão da saúde responsável pelo estudo das relações entre os alimentos e nutrientes ingeridos pelo ser humano e possíveis estados de saúde e doença.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="especialidade-sub" onclick="proximo()">&#10095;</button>
+        </section>
         <section>
             <div class="final">
                 <h2>Formas de pagamento</h2>
@@ -139,8 +163,9 @@
     </main>
     
     <footer>
-        <p>&copy;Todos os direitos reservados</p>
+        <p>&copy; Todos os direitos reservados</p>
         <p>| Criado por Isaac de Jesus</p>
     </footer>
+    <script src="src/JavaScript/animações.Js"></script>
 </body>
 </html>

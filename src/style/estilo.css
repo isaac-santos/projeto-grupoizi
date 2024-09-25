@@ -458,9 +458,10 @@ section > div.final > img {
     padding-top: 20px;
 }
 
-section > div.final > ul > li > a:hover{
+.a-img:hover{
     background-color: #8CA449;
-    zoom: 1;
+    transition: 0.5s ease-in-out;
+    border-radius: 90%;
 }
 
 @media (max-width: 1150px) {

@@ -405,6 +405,7 @@ div.linhaMain {
 }
 
 .espcialidade-ant, .especialidade-sub {
+    display: none;
     background-color: var(--cor2);
     color: white;
     border: 1px solid #bebebb;

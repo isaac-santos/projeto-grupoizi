@@ -55,14 +55,6 @@ function openTeam(){
     }
 }
 
-function openOrde(){
-    var menu = document.getElementById('especialidades-resp');
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'block';
-    } else {
-        menu.style.display = 'none';
-    }
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     const cardList = document.querySelector('.card-list');

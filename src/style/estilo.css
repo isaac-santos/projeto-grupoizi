@@ -285,7 +285,7 @@ section.backgr1 > div > p {
 
 .profgr {
     position: absolute;
-    left: 783px;
+    left: 900px;
     top: 70px;
 }
 
@@ -398,12 +398,17 @@ div.linhaMain {
 }
 
 .card-item {
-    width: 271px;
-    margin: 10px;
+    width: 269px;
+    margin: 9px;
     border-radius: 8px;
     padding: 10px;
     background-color: #a7cf3a2c;
     box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.144);
+}
+
+.card-item > figure > img{
+    width: 265px;
+
 }
 
 figure:hover figcaption {
@@ -435,6 +440,7 @@ figure:hover figcaption {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 8;
 }
 
 .espcialidade-ant {
@@ -509,7 +515,98 @@ span {
     padding: 5px;
 }
 
-@media (max-width: 1150px) {
+@media (min-width: 2000px) {
+    main {
+        position: relative;
+        top: -42px;
+    }
+    
+    section.backgr1 {
+        background-image: url(../img/background-1-grand.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 550px;
+        width: 100vw;
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.301);
+    }
+    
+    section.backgr1 > div {
+        padding: 20px;
+        max-width: 389px;
+        line-height: 1.4em;
+        background-color: rgba(255, 255, 255, 0.432);
+        position: absolute;
+        top: 80px;
+        left: 600px;
+        border-radius: 10px;   
+        font-family: var(--font0);     
+    }
+    
+    .profgr {
+        position: absolute;
+        left: 1290px;
+        top: 70px;
+    }
+
+    section#informacao > div {
+        margin-left: 400px;
+    }
+    
+    /*---------------------------------*/
+    /*      Slider carrossel  resp     */
+    /*---------------------------------*/
+    
+    .cont-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #a7cf3a10;
+    }
+    
+    .slider-wrapper {
+        overflow: visible;
+        width: 2000px;
+        margin: 0 900px;
+        height: 500px;
+        position: relative;
+    }
+
+    .card-item {
+        width: 280px;
+        margin: 10px;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #a7cf3a2c;
+        box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.144);
+    }
+  
+    section > div.final {
+        display: inline-block;
+        margin: 10px 380px;
+    }
+    
+    section > div.final > h2 {
+        color: var(--cor1);
+    }
+    
+    section > div.final > ul {
+        list-style: none;
+        display: inline-block;
+        padding-top: 20px;
+    }
+    
+    section > div.final > ul > li {
+        display: inline-block;
+        padding: 0px 6px;
+    }
+    
+    section > div.final > img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 1400px) {
     .profgr {
         display: none;
     }
@@ -517,13 +614,17 @@ span {
     .profpq {
         display: block;
     }
+}
+
+
+@media (min-width: 1040px) {
     
-    .espcialidade-ant, .especialidade-sub {
-        display: block;
+    .slider-wrapper {
+        overflow: visible;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1032px) {
     section > div.final {
         margin: 10px 140px;
     }
@@ -531,9 +632,13 @@ span {
     .slider-wrapper {
         width: 61%;
     }
+
+    .espcialidade-ant, .especialidade-sub {
+        display: block;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     .profgr {
         display: none;
     }
@@ -541,13 +646,17 @@ span {
     .profpq {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
+    
 
     section > div.final {
         margin: 8px 100px;
     }
     
     .slider-wrapper {
-        width: 40%;
+        width: 310px;
     }
 }
 

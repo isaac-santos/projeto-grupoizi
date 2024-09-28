@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo IZI</title>
+    <link rel="stylesheet" href="src/style/estilo-pag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logoCab">
+            <a href="index.html"><img id="logo" src="src/img/logo-teste.png" alt="logo da clinica"></a>
+        </div>
+        <nav>
+            <!-- menu normal -->
+            <div id="menu">
+                <div class="container">
+                    <img src="src/img/Clinica.png" alt="imagem para informações da clinica">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="izi.html">Sobre a IZI</a></li>
+                            <li><a href="convenio.html">Convênios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <img src="src/img/gestao.png" alt="imagem para informações da equipe">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="medico.html">Médicos</a></li>
+                            <li><a href="conquista.html">Conquistas</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <abbr title="serviços">
+                        <a href="index.html">
+                            <img src="src/img/distintivo.png" alt="imagem para informações das especialidades">
+                        </a>
+                    </abbr>
+                </div>
+
+                <div class="container">
+                    <abbr title="Fale conosco">
+                        <a href="contato.html">
+                            <img src="src/img/contato.png" alt="imagem para informações do contato">
+                        </a>
+                    </abbr>
+                </div>
+            </div>
+            
+            <!-- menu responsivo-->
+            <button id="menu-btn" onclick="openNav()">☰</button>
+            <div id="camadas-resp">
+                <ul>
+                    <li>
+                        <button class="menu-filho" onclick="openClinic()">Clinica ▼</button>
+                        <ul id="clinica-resp" class="sub-menu">
+                            <li><a href="izi.html">Sobre a IZI</a></li>
+                            <li><a href="convenio.html">Convênios</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <button class="menu-filho" onclick="openTeam()">Equipe ▼</button>
+                        <ul id="equipe-resp" class="sub-menu">
+                            <li><a href="medico.html">Médicos</a></li>
+                            <li><a href="conquista.html">Conquistas</a></li>
+                        </ul>
+                        
+                    </li>
+
+                    <li>                        
+                        <a href="index.html">&#10094; home</a></li>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="linhaCab" class="animlinha"></div>
+    </header>
+    <main>
+        <!-- whatsapp -->
+        <div id="whatsapp">
+            <a href="https://wa.me/5571991728328" target="_blank" ><img src="src/img/whatsapp.png" alt="acesso ao whatsapp"></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos reservados</p>
+        <p>| Criado por <a href="" class="meu-contato">Isaac de Jesus</a>.</p>
+    </footer>
+    <script src="src/JavaScript/animações.Js"></script>
+    <script>alert("clique na logo para voltar")</script>
+</body>
+</html>

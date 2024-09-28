@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo IZI</title>
+    <link rel="stylesheet" href="src/style/estilo-pag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logoCab">
+            <a href="index.html"><img id="logo" src="src/img/logo-teste.png" alt="logo da clinica"></a>
+        </div>
+        <nav>
+            <!-- menu normal -->
+            <div id="menu">
+                <div class="container">
+                    <img src="src/img/Clinica.png" alt="imagem para informações da clinica">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="convenio.html">Convênios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <img src="src/img/gestao.png" alt="imagem para informações da equipe">
+                    <div class="conteudo">
+                        <ul>
+                            <li><a href="medico.html">Médicos</a></li>
+                            <li><a href="conquista.html">Conquistas</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <abbr title="serviços">
+                        <a href="servico.html">
+                            <img src="src/img/distintivo.png" alt="imagem para informações das especialidades">
+                        </a>
+                    </abbr>
+                </div>
+
+                <div class="container">
+                    <abbr title="Fale conosco">
+                        <a href="contato.html">
+                            <img src="src/img/contato.png" alt="imagem para informações do contato">
+                        </a>
+                    </abbr>
+                </div>
+            </div>
+            
+            <!-- menu responsivo-->
+            <button id="menu-btn" onclick="openNav()">☰</button>
+            <div id="camadas-resp">
+                <ul>
+                    <li>
+                        <button class="menu-filho" onclick="openClinic()">Clinica ▼</button>
+                        <ul id="clinica-resp" class="sub-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="convenio.html">Convênios</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <button class="menu-filho" onclick="openTeam()">Equipe ▼</button>
+                        <ul id="equipe-resp" class="sub-menu">
+                            <li><a href="medico.html">Médicos</a></li>
+                            <li><a href="conquista.html">Conquistas</a></li>
+                        </ul>
+                        
+                    </li>
+
+                    <li>                        
+                        <a href="servico.html">Serviços</a></li>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="linhaCab" class="animlinha"></div>
+    </header>
+    <main>
+        <section class="story">
+            <h1>Instituto IZI</h1>
+            <p>
+                Dedicado ao diagnóstico e tratamento de doenças do aparelho circulatório, o IZI é uma sociedade composta de profissionais autônomos, especialistas em Angiologia, Cirurgia Vascular e Angiorradiologia. É composta pelos médicos <strong>Dr. Maurício Aquino, Dra. Polyana Martins, Dr. Rodrigo Costa Neves, Dr. Rofman Fidélis e Dra. Saadia Ribeiro.</strong><br><br>
+
+                Atuando exclusivamente na especialidade e agindo com o domínio dos seus aspectos técnicos, sem esquecer a dimensão ética e humana da Medicina, o IZI tem se tornado conhecido e respeitado nacionalmente pelo compromisso e responsabilidade com que desenvolve a assistência aos seus pacientes e pela dedicação à pesquisa e inovação tecnológica.
+            </p>
+        </section>
+        <div class="line"></div>
+
+        <section id="video">
+            <h3>IZI - Vídeo Apresentação do Instituto</h3>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c7ASD4Kdo2M?si=2fhAtjh4tuUMyO7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- whatsapp -->
+        <div id="whatsapp">
+            <a href="https://wa.me/5571991728328" target="_blank" ><img src="src/img/whatsapp.png" alt="acesso ao whatsapp"></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos reservados</p>
+        <p>| Criado por <a href="" class="meu-contato">Isaac de Jesus</a>.</p>
+    </footer>
+    <script src="src/JavaScript/animações.Js"></script>
+</body>
+</html>

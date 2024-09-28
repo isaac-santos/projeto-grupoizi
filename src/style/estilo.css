@@ -515,30 +515,80 @@ span {
     padding: 5px;
 }
 
-@media (min-width: 2000px) {
-    main {
-        position: relative;
-        top: -42px;
-    }
-    
-    section.backgr1 {
-        background-image: url(../img/background-1-grand.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        height: 550px;
-        width: 100vw;
-        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.301);
-    }
-    
+@media (min-width: 2865px) and (max-width: 4000px) {
     section.backgr1 > div {
-        padding: 20px;
-        max-width: 389px;
-        line-height: 1.4em;
-        background-color: rgba(255, 255, 255, 0.432);
-        position: absolute;
         top: 80px;
-        left: 600px;
-        border-radius: 10px;   
+        left: 1100px;  
+        font-family: var(--font0); 
+        max-width: 790px;
+        font-size: 1.5em;   
+    }
+
+    .profgr {
+        position: absolute;
+        left: 2000px;
+        top: 70px;
+    }
+
+    section#informacao {
+        padding: 30px 0px 5px 150px;
+    }
+
+    section#informacao > div.escolha {
+        padding: 30px;
+        max-width: 900px;
+    }
+
+    section#informacao > div {
+        margin-left: 600px;
+        font-size: 1.9em;
+    }
+
+    section#informacao > div > p {
+        width: 500px;
+    }
+
+    /*---------------------------------*/
+    /*      Slider carrossel  resp     */
+    /*---------------------------------*/
+    
+    .slider-wrapper {
+        overflow: visible;
+        width: 1000px;
+        margin: 0 900px;
+        height: 700px;
+        position: relative;
+    }
+
+    .card-item {
+        width: 500px;
+        height: 600px;
+        font-size: 1.3em;
+    }
+  
+    section > div.final {
+        display: inline-block;
+        margin: 50px 400px;
+    }
+    
+    section > div.final > img {
+        width: 90px;
+    }
+
+    section.local {
+        font-size: 1.5em;
+    }
+    
+    footer {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1910px) and (max-width: 2864px) {
+
+    section.backgr1 > div {
+        top: 80px;
+        left: 600px;  
         font-family: var(--font0);     
     }
     
@@ -583,7 +633,7 @@ span {
   
     section > div.final {
         display: inline-block;
-        margin: 10px 380px;
+        margin: 10px 310px;
     }
     
     section > div.final > h2 {
@@ -616,6 +666,17 @@ span {
     }
 }
 
+@media (max-width: 1308px) {
+    section > div.final {
+        margin: 10px 170px;
+    }
+}
+
+@media (max-width: 1127px) {
+    section > div.final {
+        margin: 10px 160px;
+    }
+}
 
 @media (min-width: 1040px) {
     
@@ -636,6 +697,34 @@ span {
     .espcialidade-ant, .especialidade-sub {
         display: block;
     }
+    
+}
+
+@media (max-width: 1090px) {
+    /*---------------------------------*/
+    /*         Slider carrossel        */
+    /*---------------------------------*/
+
+    .slider-wrapper {
+        overflow: hidden;
+        width: 62%;
+        height: 500px;
+
+    }
+}
+
+@media (max-width: 986px) {
+    /*---------------------------------*/
+    /*         Slider carrossel        */
+    /*---------------------------------*/
+
+    .slider-wrapper {
+        overflow: hidden;
+        width: 64%;
+        height: 500px;
+
+    }
+
 }
 
 @media (max-width: 970px) {
@@ -646,13 +735,28 @@ span {
     .profpq {
         display: none;
     }
+
+    .slider-wrapper {
+        width: 310px;
+    }
+
+}
+
+@media (max-width: 880px) {
+    
+
+    section > div.final {
+        margin: 8px 90px;
+    }
+    
+    
 }
 
 @media (max-width: 768px) {
     
 
     section > div.final {
-        margin: 8px 100px;
+        margin: 8px 90px;
     }
     
     .slider-wrapper {

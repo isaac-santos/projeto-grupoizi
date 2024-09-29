@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo IZI</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="src/style/estilo-pag.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
-        
+        @import "node_modules/swiper/swiper-bundle";
+
         section {
             padding-top: 35px;
         }
@@ -27,8 +32,8 @@
             background-image: url(src/img/img-angiologia.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            height: 230px;
-            padding: 50px 10px;
+            height: 467px;
+            padding: 50px 50px;
         }
 
         section#img2 {
@@ -38,7 +43,7 @@
             background-image: url(src/img/img-endocrinologia.jpg);
             background-position: center bottom;
             background-repeat: no-repeat;
-            height: 230px;
+            height: 467px;
         }
 
         section#img3 {
@@ -48,7 +53,7 @@
             background-image: url(src/img/img-nutricao.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            height: 226px;
+            height: 467px;
         }
 
         .separa {
@@ -57,8 +62,59 @@
             color: var(--cor1);
         }
 
-        
+        /*---slide---*/
+        .swiper-slide {
+            background-color: rgba(128, 128, 128, 0.226);
+            backdrop-filter: blur(30px);
+            border: 1px solid white;
+            max-width: 479px;
+            padding: 60px;     
+            display: inline-flex;       
+        }
 
+
+        .swiper-slide > img{
+            border-radius: 50%;
+        }
+        
+        .doc-img {
+            border: 1px solid white;
+            padding: 4px;
+        }
+
+        .sobre {
+            padding-left: 10px;
+        }
+
+        .sobre > h3 {
+            padding-bottom: 8px;
+        }
+
+        .sobre > h3 > a {
+            color: white;
+            text-decoration: none;
+        } 
+
+        .sobre > h3 > a:hover {
+            text-decoration: underline;
+        }
+
+        .sobre > p {
+            color: white;
+        }
+
+        @media (min-width:320px) and (max-width: 425px) {
+            .swiper-slide { 
+                display: block;     
+            }
+
+            .sobre > h3 {
+                font-size: 0.6em;
+            }
+            .sobre > p {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -145,7 +201,55 @@
             <h4 class="separa">Angiologistas</h4>
         </section>
         <section id="img1">
-            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-hash="slide1">
+                    <img src="src/img/Mauricio_rd.jpg" alt="Dr.Mauricio" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dr. Maurício de Amorim Aquino</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide2">
+                    <img src="src/img/Polyana_rd.jpg" alt="Dra. Polyana" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dra. Polyana Meira Martins</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide3">
+                    <img src="src/img/Rodrigo_Neves_reduzido.jpeg" alt="Dr. Rodrigo_Neves" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dr. Rodrigo Costa Neves</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide4">
+                    <img src="src/img/Rofman_rd.jpg" alt="Dr. Rofman" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dr. Rofman Fidélis</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide5">
+                    <img src="src/img/Saadia_rd.jpg" alt="Dra. Saadia" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dra. Saadia Santos Ribeiro da Silva</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+            </div>
         </section>
         <section class="separa">
             <h4>Endocrinologistas</h4>
@@ -169,5 +273,7 @@
         <p>| Criado por <a href="" class="meu-contato">Isaac de Jesus</a>.</p>
     </footer>
     <script src="src/JavaScript/animações.Js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/JavaScript/slide.js"></script>
 </body>
 </html>

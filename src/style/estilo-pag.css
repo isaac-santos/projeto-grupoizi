@@ -230,6 +230,12 @@ div#linhaCab {
 /*           principal           */
 /*-------------------------------*/
 
+main {
+    position: relative;
+    background-color: #a7cf3a2d;
+    padding: 0px 0px 0px 0px;
+    font-family: var(--font0);
+}
 
 /*-------------------------------*/
     /*       Rodapé       */

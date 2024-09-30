@@ -52,7 +52,7 @@ header {
     background-color: white;
     height: 43px;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logoCab img{
@@ -274,4 +274,5 @@ div#whatsapp {
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 2;
 }

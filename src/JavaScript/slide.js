@@ -18,31 +18,29 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 10,
   // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     320: {
-      slidesPerView: 1,
-      spaceBetween: 200
+      slidesPerView: 'auto',
+      spaceBetween: 1
     },
-
-    375: {
-      slidesPerView: 1.2,
-      spaceBetween: 30
-    },
-    // when window width is >= 480px
     480: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 'auto',
       spaceBetween: 30
     },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 1.1,
-      spaceBetween: 40
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 190
     },
-
-    // maior que >= 1440px
+    1024: {
+      slidesPerView: 'auto',
+      spaceBetween: 30
+    },
     1440: {
-        slidesPerView: 2,
-        spaceBetween: 15
+      slidesPerView: 'auto',
+      spaceBetween: 160
     }
   }
   });

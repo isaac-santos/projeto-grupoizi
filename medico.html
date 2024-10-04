@@ -6,7 +6,6 @@
     <title>Grupo IZI</title>
     <link rel="stylesheet" href="src/style/estilo-pag.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <style>
 
         section {
@@ -69,11 +68,10 @@
             backdrop-filter: blur(30px);
             border: 1px solid white;
             max-width: 479px;
-            padding: 40px;
-            align-content: center;
-            text-align: center;
-            display: block;
-            min-height: 50vh;  
+            padding: 60px;     
+            display: inline-flex;
+            min-height: 200px;
+            height: auto;     
         }
 
 
@@ -103,39 +101,10 @@
             text-decoration: underline;
         }
 
-        .btn-sobre {
-            background-color: rgb(136, 223, 65);
-            border-radius: 8px;
-            cursor: pointer;
+        .sobre > p {
             color: white;
-            font-family: var(--font1);
-            font-size: 0.9em;
-            padding: 8px;
-            margin: 5px;
         }
 
-        .btn-sobre:hover {
-            border: 4px solid var(--cor2);
-        }
-
-        .modal {
-            background-color: white;
-            border: 1px solid var(--cor2);
-            border-radius: 5px;
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 50vw;
-            height: 60vh;
-        }
-
-        .modal1 > .md-content > ul {
-            padding: 5px;
-            list-style-position: inside;
-        }
-        
         @media (min-width: 1440px) {
             .swiper-slide {
                 max-width: 420px;
@@ -148,6 +117,10 @@
 
             .sobre > h3 {
                 font-size: 1em;
+            }
+
+            .sobre > p {
+                font-size: 0.9em;
             }
         }
 
@@ -291,62 +264,68 @@
             <h4 class="separa">Angiologistas</h4>
         </section>
         <section id="img1">
-            <div id="swiper1" class="swiper">
+            <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="src/img/Mauricio_rd.jpg" alt="Dr.Mauricio" class="doc-img">
-                        <div class="sobre">
-                            <h3><a href="#">Dr. Maurício de Amorim Aquino</a></h3>                            
-                        </div>                        
+                  <div class="swiper-slide" data-hash="slide1">
+                    <img src="src/img/Mauricio_rd.jpg" alt="Dr.Mauricio" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dr. Maurício de Amorim Aquino</a></h3>
+                        <p>teste</p>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide2">
+                    <img src="src/img/Polyana_rd.jpg" alt="Dra. Polyana" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dra. Polyana Meira Martins</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide3">
+                    <img src="src/img/Rodrigo_Neves_reduzido.jpeg" alt="Dr. Rodrigo_Neves" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dr. Rodrigo Costa Neves</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide4">
+                    <img src="src/img/Rofman_rd.jpg" alt="Dr. Rofman" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="https://www.instagram.com/rofmanfidelis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Dr. Rofman Fidélis</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-hash="slide5">
+                    <img src="src/img/Saadia_rd.jpg" alt="Dra. Saadia" class="doc-img">
+                    <div class="sobre">
+                        <h3><a href="#">Dra. Saadia Santos Ribeiro da Silva</a></h3>
+                        <p>teste</p>
+                    </div>
+                  </div>
+                  
                 </div>
                 <div class="swiper-pagination"></div>
+              
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+              
             </div>
         </section>
         <section class="separa">
             <h4>Endocrinologistas</h4>
         </section>
         <section id="img2">
-            <div id="swiper2" class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+
         </section>
         <section class="separa">
             <h4>Nutricionistas</h4>
         </section>
         <section id="img3">
-            <div id="swiper3" class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+
         </section>
-        
         <!-- whatsapp -->
         <div id="whatsapp">
             <a href="https://wa.me/5571991728328" target="_blank" ><img src="src/img/whatsapp.png" alt="acesso ao whatsapp"></a>
@@ -358,7 +337,6 @@
     </footer>
     <script src="src/JavaScript/animações.Js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="src/JavaScript/swiper.js"></script>
-    <script src="src/JavaScript/modal-list.js"></script>
+    <script src="src/JavaScript/slide.js"></script>
 </body>
 </html>

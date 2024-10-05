@@ -18,3 +18,11 @@ closeButtons.forEach(function(btn) {
         modal.style.display = 'none';
     }
 });
+
+modals.forEach(function(modal) {
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+});

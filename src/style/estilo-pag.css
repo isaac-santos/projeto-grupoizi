@@ -239,7 +239,7 @@ main {
 }
 
 /*-------------------------------*/
-    /*       Rodapé       */
+/*            Rodapé             */
 /*-------------------------------*/
 
 footer {
@@ -266,6 +266,111 @@ footer > p {
 
 .meu-contato:hover {
     text-decoration: underline;
+}
+/*-------------------------------*/
+/*             Modal             */
+/*-------------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* botão */
+.btnabrirmodal {
+    width: 100px;
+    border: 1px solid var(--cor1);
+    border-radius: 9px;
+    padding: 2px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btnabrirmodal:hover {
+    border: 3px inset var(--cor1);
+    transition: all 0.5s, ease-in-out;
+}
+
+/* cabeçalho modal */
+.cab-modal {
+    display: inline-flex;
+    padding-bottom: 10px;
+}
+
+.fechar {
+    background-color: var(--cor1);
+    width: 24px;
+    height: 25px;
+    border: 1px solid var(--cor0);
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: white;
+    float: right;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 16em;
+    
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+/* conteúdo do modal */
+.conteudo-modal {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--cor1);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* modal responsivo */
+@media (max-width: 610px) {
+    .fechar {
+        margin-left: 14em;            
+    }
+}
+
+@media (max-width: 558px) {
+    .fechar {
+        margin-left: 10em;            
+    }
+}
+
+@media (max-width: 454px) {
+    .fechar {
+        margin-left: 8em;            
+    }
+}
+
+@media (max-width: 402px) {
+    .fechar {
+        margin-left: 4em;            
+    }
+}
+
+/*------------------------------*/
+/*        modal creditos        */
+/*------------------------------*/
+.autor-credit > li > a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+.autor-credit > li > a:hover {
+    color: var(--cor0);
+    text-decoration: none;
 }
 
 /*------------------------------*/

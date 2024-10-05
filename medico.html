@@ -69,7 +69,8 @@
             border: 1px solid white;
             max-width: 479px;
             padding: 60px;     
-            display: inline-flex;
+            display: inline-block;
+            text-align: center;
             min-height: 200px;
             height: auto;     
         }
@@ -84,25 +85,13 @@
             padding: 4px;
         }
 
-        .sobre {
-            padding-left: 10px;
-        }
-
-        .sobre > h3 {
-            padding-bottom: 8px;
-        }
-
-        .sobre > h3 > a {
+        .doc-nome > a {
             color: white;
             text-decoration: none;
-        } 
-
-        .sobre > h3 > a:hover {
-            text-decoration: underline;
         }
 
-        .sobre > p {
-            color: white;
+        .doc-nome > a:hover {
+            color: var(--cor0);
         }
 
         @media (min-width: 1440px) {
@@ -115,13 +104,7 @@
                 padding: 20px;
             }
 
-            .sobre > h3 {
-                font-size: 1em;
-            }
-
-            .sobre > p {
-                font-size: 0.9em;
-            }
+            
         }
 
         @media (min-width: 1024px) and (max-width: 1439px){
@@ -134,14 +117,7 @@
                 height: auto;
                 padding: 20px;
             }
-
-            .sobre > h3 {
-                font-size: 1em;
-            }
-
-            .sobre > p {
-                font-size: 0.9em;
-            }
+            
         }
 
         @media (min-width: 768px) and (max-width: 1023px) {
@@ -264,67 +240,139 @@
             <h4 class="separa">Angiologistas</h4>
         </section>
         <section id="img1">
-            <div class="swiper">
+            <div id="swiper1" class="swiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide" data-hash="slide1">
-                    <img src="src/img/Mauricio_rd.jpg" alt="Dr.Mauricio" class="doc-img">
-                    <div class="sobre">
-                        <h3><a href="#">Dr. Maurício de Amorim Aquino</a></h3>
-                        <p>teste</p>
+                    
+                    <div class="swiper-slide">
+                        <img src="src/img/Mauricio_rd.jpg" alt="Dr.Mauricio" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/m.a.aquino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <h3>Dr. Maurício de Amorim Aquino</h3>
+                            </a>
+                        </div>           
                     </div>
-                  </div>
 
-                  <div class="swiper-slide" data-hash="slide2">
-                    <img src="src/img/Polyana_rd.jpg" alt="Dra. Polyana" class="doc-img">
-                    <div class="sobre">
-                        <h3><a href="#">Dra. Polyana Meira Martins</a></h3>
-                        <p>teste</p>
+                    <div class="swiper-slide">
+                        <img src="" alt="Dra. Natalia" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/nataliabarretto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <h3>Dra. Natalia Santana Andrade Barretto</h3>
+                            </a>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="swiper-slide" data-hash="slide3">
-                    <img src="src/img/Rodrigo_Neves_reduzido.jpeg" alt="Dr. Rodrigo_Neves" class="doc-img">
-                    <div class="sobre">
-                        <h3><a href="#">Dr. Rodrigo Costa Neves</a></h3>
-                        <p>teste</p>
+                    <div class="swiper-slide">
+                        <img src="src/img/Polyana_rd.jpg" alt="Dra. Polyana" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/poly2506/?utm_source=ig_web_button_share_sheet">
+                                <h3>Dra. Polyana Meira Martins</h3>
+                            </a>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="swiper-slide" data-hash="slide4">
-                    <img src="src/img/Rofman_rd.jpg" alt="Dr. Rofman" class="doc-img">
-                    <div class="sobre">
-                        <h3><a href="https://www.instagram.com/rofmanfidelis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Dr. Rofman Fidélis</a></h3>
-                        <p>teste</p>
+                    <div class="swiper-slide">
+                        <img src="src/img/Rodrigo_Neves_reduzido.jpeg" alt="Dr. Rodrigo_Neves" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/drrodrigoneves.vascular?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <h3>Dr. Rodrigo Costa Neves</h3>
+                            </a>
+                        </div>
                     </div>
-                  </div>
 
-                  <div class="swiper-slide" data-hash="slide5">
-                    <img src="src/img/Saadia_rd.jpg" alt="Dra. Saadia" class="doc-img">
-                    <div class="sobre">
-                        <h3><a href="#">Dra. Saadia Santos Ribeiro da Silva</a></h3>
-                        <p>teste</p>
+                    <div class="swiper-slide">
+                        <img src="" alt="Dr. Rodrigo" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="">
+                                <h3>Dr. Rodrigo Riccio Oliveira</h3>
+                            </a>
+                        </div>
                     </div>
-                  </div>
-                  
+
+                    <div class="swiper-slide">
+                        <img src="src/img/Rofman_rd.jpg" alt="Dr. Rofman" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/rofmanfidelis?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <h3>Dr. Rofman Fidélis</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="src/img/Saadia_rd.jpg" alt="Dra. Saadia" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/saadiaribeiro1/?utm_source=ig_web_button_share_sheet">
+                                <h3>Dra. Saadia Santos Ribeiro da Silva</h3>
+                            </a>
+                        </div>
+                    </div>                    
+                
                 </div>
                 <div class="swiper-pagination"></div>
-              
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-              
             </div>
         </section>
         <section class="separa">
             <h4>Endocrinologistas</h4>
         </section>
         <section id="img2">
-
+            <div id="swiper2" class="swiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <img src="" alt="Dra. Jessy" class="doc-img">
+                        <div class="doc-nome">
+                            <a href="https://www.instagram.com/jessylimagomes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                                <h3>Dra. Jessy Janne de Lima Gomes</h3>
+                            </a>
+                        </div>           
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="" alt="Dra. Rosangela">
+                        <div class="doc-nome">
+                            <a href="#">
+                                <h3>Dra. Rosangela Pereira Andrade</h3>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
         <section class="separa">
             <h4>Nutricionistas</h4>
         </section>
         <section id="img3">
+            <div id="swiper3" class="swiper">
+                <div class="swiper-wrapper">
 
+                    <div class="swiper-slide">
+                        <img src="" alt="Dra. Tatiana" class="doc-img">    
+                        <div class="doc-nome">
+                            <a href="#">
+                                <h3>Dra. Lucileide Aurea de Souza</h3>
+                            </a>
+                        </div>  
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="" alt="Dra. Tatiana" class="doc-img">    
+                        <div class="doc-nome">
+                            <a href="#">
+                                <h3>Dra. Tatiana Oliveira de Souza Aquino</h3>
+                            </a>
+                        </div>   
+                    </div>
+                    
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
         <!-- whatsapp -->
         <div id="whatsapp">
@@ -337,6 +385,6 @@
     </footer>
     <script src="src/JavaScript/animações.Js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="src/JavaScript/slide.js"></script>
+    <script src="src/JavaScript/swiper.js"></script>
 </body>
 </html>

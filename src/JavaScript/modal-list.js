@@ -1,7 +1,20 @@
-function abrirmodal(carregarModal1) {
-    console.log(carregarModal1);
-}
+var openModalButtons = document.querySelectorAll('.btnabrirmodal');
 
-function fecharModal(fecharModal1){
-    console.log(fecharModal1);
-}
+var closeButtons = document.querySelectorAll('.fechar');
+
+var modals = document.querySelectorAll('.modal');
+
+openModalButtons.forEach(function(btn) {
+    btn.onclick = function() {
+        var modalId = this.getAttribute('data-modal');
+        var modal = document.getElementById(modalId);
+        modal.style.display = 'block';
+    }
+});
+
+closeButtons.forEach(function(btn) {
+    btn.onclick = function() {
+        var modal = this.closest('.modal');
+        modal.style.display = 'none';
+    }
+});

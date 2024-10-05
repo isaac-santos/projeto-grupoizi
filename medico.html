@@ -94,6 +94,98 @@
             color: var(--cor0);
         }
 
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* botão */
+        .btnabrirmodal {
+            width: 100px;
+            border: 1px solid var(--cor1);
+            border-radius: 9px;
+            padding: 2px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .btnabrirmodal:hover {
+            border: 3px inset var(--cor1);
+            transition: all 0.5s, ease-in-out;
+        }
+
+        /* cabeçalho modal */
+        .cab-modal {
+            display: inline-flex;
+            
+        }
+
+        .fechar {
+            background-color: var(--cor1);
+            width: 24px;
+            height: 25px;
+            border: 1px solid var(--cor0);
+            border-radius: 5px;
+            font-size: 1.3em;
+            color: white;
+            float: right;
+            font-weight: bold;
+            align-self: center;
+            margin-left: 16em;
+            
+        }
+
+        .fechar:hover,
+        .fechar:focus {
+            color: #000;
+            cursor: pointer;
+        }
+
+        /* conteúdo do modal */
+        .conteudo-modal {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid var(--cor1);
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        /* modal responsivo */
+        @media (max-width: 610px) {
+            .fechar {
+                margin-left: 14em;            
+            }
+        }
+
+        @media (max-width: 558px) {
+            .fechar {
+                margin-left: 10em;            
+            }
+        }
+
+        @media (max-width: 454px) {
+            .fechar {
+                margin-left: 8em;            
+            }
+        }
+
+        @media (max-width: 402px) {
+            .fechar {
+                margin-left: 4em;            
+            }
+        }
+        /* swiper responsivo */
         @media (min-width: 1440px) {
             .swiper-slide {
                 max-width: 420px;
@@ -102,9 +194,7 @@
             section#img1, section#img2, section#img3 {
                 height: auto;
                 padding: 20px;
-            }
-
-            
+            }            
         }
 
         @media (min-width: 1024px) and (max-width: 1439px){
@@ -125,6 +215,7 @@
                 display: block;
                 max-width: 500px;
             }
+
         }
 
         @media (min-width: 425px) and (max-width: 767px) {
@@ -240,6 +331,7 @@
             <h4 class="separa">Angiologistas</h4>
         </section>
         <section id="img1">
+            <!-- Inicio do swiper -->
             <div id="swiper1" class="swiper">
                 <div class="swiper-wrapper">
                     
@@ -249,6 +341,9 @@
                             <a href="https://www.instagram.com/m.a.aquino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                                 <h3>Dr. Maurício de Amorim Aquino</h3>
                             </a>
+                            <button class="btnabrirmodal" data-modal="modal1">
+                                <img src="src/img/avalie.png" alt="sobre mim">
+                            </button>
                         </div>           
                     </div>
 
@@ -267,6 +362,9 @@
                             <a href="https://www.instagram.com/poly2506/?utm_source=ig_web_button_share_sheet" target="_blank">
                                 <h3>Dra. Polyana Meira Martins</h3>
                             </a>
+                            <button class="btnabrirmodal" data-modal="modal2">
+                                <img src="src/img/avalie.png" alt="sobre mim">
+                            </button>
                         </div>
                     </div>
 
@@ -310,6 +408,66 @@
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+            </div>
+
+            <!-- modal Dr. Mauricio -->
+            <div id="modal1" class="modal">
+                <div class="conteudo-modal">
+                    <div class="cab-modal">
+                        <h2>Sobre mim</h2><button class="fechar"><span>&times;</span></button>
+                    </div>
+                    <ul>
+                        <li>
+                            Mestre em Ciências Cirúrgicas pela Universidade Federal do Rio Grande do Sul.
+                        </li>
+                        <li>
+                            Pós-Graduação Lato Sensu em Cirurgia Vascular e Endovascular na Real e Benemérita Sociedade Portuguesa de Beneficência de São Paulo.
+                        </li>
+                        <li>
+                            Especilização em Cirurgia Vascular e Endovascular no Instituto de Cirurgia Vascular e Endovascular de São Paulo.
+                        </li>
+                        <li>
+                            Título de Especialista em Cirurgia Vascular-AMB.
+                        </li>
+                        <li>
+                            Certificado de Atuação na Área de Angiorradiologia e Cirurgia Endovascular-AMB.
+                        </li>
+                        <li>
+                            Membro do IZI.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- modal Dra. Polyana-->
+            <div id="modal2" class="modal">
+                <div class="conteudo-modal">
+                    <div class="cab-modal">
+                        <h2>Sobre mim</h2><button class="fechar"><span>&times;</span></button>
+                    </div>
+                    <ul>
+                        <li>
+                            Membro da Sociedade Brasileira de Angiologia e Cirurgia Vascular.
+                        </li>
+                        <li>
+                            Especialização em Angiologia e Cirurgia Vascular.
+                        </li>
+                        <li>
+                            Formada pela Escola de Ultrassonografia CETRUS - SP no curso de Ultrassonografia Vascular com Doppler.
+                        </li>
+                        <li>
+                            Membro da equipe de Cirurgia Vascular do Hospital Santa Izabel (HSI).
+                        </li>
+                        <li>
+                            Membro da equipe de Cirurgia Vascular do Hospital do Subúrbio (HS).
+                        </li>
+                        <li>
+                            Cirurgiã Vascular do Hospital Geral Roberto Santos (HGRS) - vínculo público - concurso.
+                        </li>
+                        <li>
+                            Membro do IZI.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="separa">
@@ -386,5 +544,6 @@
     <script src="src/JavaScript/animações.Js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/JavaScript/swiper.js"></script>
+    <script src="src/JavaScript/modal-list.js"></script>
 </body>
 </html>

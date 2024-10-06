@@ -24,7 +24,7 @@
             border-radius: 8px;
             padding: 0px 20px 70px 20px;
             margin-left: 20%;
-            height: 35vh;
+            height: 39vh;
             max-width: 350px;
             font-family: var(--font1);
         }
@@ -101,6 +101,25 @@
             height: 460px;
         }
 
+        .hora {
+            background-color: var(--cor1);
+            border-radius: 8px;
+            box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.295);
+            padding: 10px;
+            position: absolute;
+            width: 235px;
+            left: 190%;
+            top: 2%;
+        }
+
+        .hora > h4 {
+            padding-bottom: 5px;
+        }
+
+        .hora > ul {
+            list-style: none;
+        }
+
         div#loc-li1 {
             border-radius: 0px 0px 50px 0px;
             width: 45%;
@@ -146,9 +165,6 @@
             padding: 30px 20px 30px 0px;
         }
 
-        .diretor {
-            list-style: none;
-        }
         /* tela responsiva */
         @media (min-width: 2352px) {
             #contato-conosco {
@@ -173,6 +189,38 @@
 
             .btn-enviar {
                 font-size: 2em;
+            }
+
+            .contatos-final {
+                font-size: 1.5em;
+            }
+
+            .hora {
+                width: 360px;
+            }
+        }
+
+        @media (max-width: 1534px) {
+            .hora {
+                left: 140%;        
+            }
+        }
+
+        @media (max-width: 1340px) {
+            .hora {
+                left: 100%;        
+            }
+        }
+
+        @media (max-width: 1182px) {
+            .hora {
+                position: relative;
+                left: 0;
+                margin-bottom: 15px;        
+            }
+
+            .links > li {
+                padding-top: 5%;
             }
         }
         /* Caixa de envio */
@@ -224,11 +272,32 @@
                 height: 410px;
             }
 
+            .hora {
+                position: absolute;
+                left: 140%;
+                margin-bottom: 15px;        
+            }
         }
 
         @media (max-width: 597px) {
             #contato-conosco {
                 background-size: cover;
+            }
+
+            .hora {
+                position: absolute;
+                left: 100%;      
+            }
+        }
+
+        @media (max-width: 504px) {
+            .hora {
+                position: relative;
+                left: 0;     
+            }
+            
+            #mapa {
+                margin-top: 50px;
             }
         }
 
@@ -386,12 +455,21 @@
                     <li><img src="src/img/facebook.jpg" alt="facebook da izi"></li>
                     <li><img src="src/img/instagram.jpg" alt="instagram da izi"></li>
                 </ul>
+
+                <div class="hora">
+                    <h4>Horários de funcionamento</h4>
+                    <ul>
+                        <li>Segunda.......08:00h às 17:00h</li>
+                        <li>Terça............08:00h às 17:00h</li>
+                        <li>Quarta..........08:00h às 17:00h</li>
+                        <li>Quinta..........08:00h às 17:00h</li>
+                        <li>Sexta............08:00h às 16:00h</li>
+                    </ul>
+                </div>
+
                 <h4>Telefone</h4>
                 <ul class="links">
                     <li>Tel: (71) 3035-3922</li>
-                </ul>
-                <ul class="diretor">
-                    <li><strong>Diretor tecnico:</strong> Dr.  Mauricio Amorin - CRM 13627 </li>
                 </ul>
             </div>
         </section>
@@ -427,7 +505,8 @@
         </div>
 
         <div><button class="btnabrirmodal" data-modal="modal12">Creditos</button></div>
-        <p>&copy; Todos os direitos reservados</p>
+        <br><p>&copy; Todos os direitos reservados</p>
+        <p>| <strong>Diretor tecnico:</strong> Dr.  Mauricio Amorin - CRM 13627</p>
         <p>| Criado por <a href="" class="meu-contato">Isaac de Jesus</a>.</p>
     </footer>
     <script src="src/JavaScript/animações.Js"></script>

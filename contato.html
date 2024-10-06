@@ -6,6 +6,271 @@
     <title>Grupo IZI</title>
     <link rel="stylesheet" href="src/style/estilo-pag.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        #contato-conosco {
+            background-color: var(--cor1);
+            background-image: url(src/img/clinica-izi.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            height: 600px;
+            align-content: center;
+            background-size: contain;
+        }
+
+        .envio {
+            background-color: white;
+            border: 2px solid rgba(128, 128, 128, 0.37);
+            border-radius: 8px;
+            padding: 0px 20px 70px 20px;
+            margin-left: 20%;
+            height: 35vh;
+            max-width: 350px;
+            font-family: var(--font1);
+        }
+
+        .cab-envio {
+            background-color: var(--cor0);
+            color: white;
+            border-radius: 8px 8px 0px 2px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 106%;
+            transform: translateX(-21px);
+        }
+
+        .label {
+            width: 90%;
+            height: 3vh;
+            border: 2px solid var(--cor2);
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .btn-enviar {
+            background-color: #a7cf3a71;
+            border: 1px solid var(--cor1);
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .btn-enviar:hover {
+            cursor: pointer;
+            background-color: green;
+            color: white; 
+        }
+
+        :-ms-input-placeholder {
+            color: #aaa;
+            font-style: italic;
+        }
+
+        ::placeholder {
+            color: #aaa; 
+            font-style: italic;
+        }
+        
+        #local {
+            position: relative;
+            margin: 0 5%;
+            display: inline-flex;
+        }
+
+        .local {
+            background-color: white;
+            width: 45vw;            
+        }
+
+        .izi-img {
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 90px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .grupo-izi {
+            display: inline-flex;
+            vertical-align: top;
+            margin-top: 35px;
+            font-family: var(--font2);
+        }
+
+        #mapa {
+            width: 100%; 
+            height: 460px;
+        }
+
+        div#loc-li1 {
+            border-radius: 0px 0px 50px 0px;
+            width: 45%;
+            top: 10px;
+        }
+
+        div#loc-li2 {
+            border-radius: 0px 0px 50px 0px;
+            width: 43%;
+            top: 30px;
+        }
+
+        div#loc-li3 {
+            border-radius: 0px 50px 0px 0px;
+            width: 43%;
+            top: 70px;
+        }
+
+        div#loc-li4 {
+            border-radius: 0px 50px 0px 0px;
+            width: 45%;
+            top: 90px;
+        }
+
+        .linha-local {
+            background-color: var(--cor0);
+            height: 4px;
+            position: absolute;            
+        }
+
+        .contatos-final {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+        }
+
+        .links {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .links > li {
+            padding: 30px 20px 30px 0px;
+        }
+
+        .diretor {
+            list-style: none;
+        }
+        /* tela responsiva */
+        @media (min-width: 2352px) {
+            #contato-conosco {
+                height: 1100px;              
+            }
+            
+            .envio {
+                height: 30vh;
+                max-width: 900px;
+                margin-left: 5%;  
+            }
+
+            .cab-envio {
+                width: 102%;
+                transform: translateX(-21px);
+                font-size: 1.5em;
+            }
+
+            .label {
+                font-size: 2em;
+            }
+
+            .btn-enviar {
+                font-size: 2em;
+            }
+        }
+        /* Caixa de envio */
+        @media (max-width: 1293px) {
+            .envio {
+                margin-left: 12%;
+            }
+        }
+
+        @media (max-width: 1160px) {
+            .envio {
+                margin-left: 4%;
+            }
+        }
+
+        @media (max-width: 1059px) {
+            .envio {
+                margin-left: 1%;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .contatos-final {
+                top: 150px;
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 929px) {
+            .diretor {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 708px) {
+            #local {
+                margin: 0 5%;
+                display: inline-block;
+            }
+
+            .local {
+                background-color: white;
+                width: 90vw;  
+                height: 410px;              
+            }
+
+            #mapa {
+                width: 100%; 
+                height: 410px;
+            }
+
+        }
+
+        @media (max-width: 597px) {
+            #contato-conosco {
+                background-size: cover;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .envio {
+                margin-left: 0;
+            }
+
+            div#loc-li1 {                
+                width: 90%;
+            }
+
+            div#loc-li2 {                
+                width: 85%;
+            }
+
+            div#loc-li3 {
+                width: 85%;
+            }
+
+            div#loc-li4 {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .cab-envio {
+                width: 108%;
+            }
+            
+            .diretor {
+                width: 200px;
+            }
+
+            .local {
+                height: 429px;
+            }
+
+            #mapa {
+                height: 510px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -86,6 +351,49 @@
         <div id="linhaCab" class="animlinha"></div>
     </header>
     <main>
+        <section id="contato-conosco">
+            <div class="envio">
+                <div class="cab-envio">
+                    <h2>Fale conosco</h2>
+                </div>
+                <form id="contact-form">
+                    <input type="text" id="name" name="from_name" placeholder="Nome" class="label" required><br><br>
+                
+                    <input type="email" id="email" name="email" placeholder="E-mail" class="label" required><br><br>
+                
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." class="label" required></textarea><br><br>
+                
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section id="local">
+            <div class="local">
+                <img src="src/img/izi.png" alt="logo da grupo izi" class="izi-img">
+                <span class="grupo-izi"><h2>Grupo IZI</h2></span>
+            </div>
+            <div id="loc-li1" class="linha-local"></div>
+            <div id="loc-li2" class="linha-local"></div>
+            <div id="loc-li3" class="linha-local"></div>
+            <div id="loc-li4" class="linha-local"></div>
+            <div class="local">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.597809307745!2d-38.5170632!3d-12.9942586!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160484cf4f9303%3A0xbf5fb7c80977177b!2sCentro%20M%C3%A9dico%20do%20Vale!5e0!3m2!1spt-BR!2sbr!4v1728158579499!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+            </div>
+            <div class="contatos-final">
+                <h4>Siga-nos</h4>
+                <ul class="links">
+                    <li><img src="src/img/facebook.jpg" alt="facebook da izi"></li>
+                    <li><img src="src/img/instagram.jpg" alt="instagram da izi"></li>
+                </ul>
+                <h4>Telefone</h4>
+                <ul class="links">
+                    <li>Tel: (71) 3035-3922</li>
+                </ul>
+                <ul class="diretor">
+                    <li><strong>Diretor tecnico:</strong> Dr.  Mauricio Amorin - CRM 13627 </li>
+                </ul>
+            </div>
+        </section>
         <!-- whatsapp -->
         <div id="whatsapp">
             <a href="https://wa.me/5571991728328" target="_blank" ><img src="src/img/whatsapp.png" alt="acesso ao whatsapp"></a>
@@ -123,5 +431,23 @@
     </footer>
     <script src="src/JavaScript/animações.Js"></script>
     <script src="src/JavaScript/modal-list.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("D9Bm5krPPfg9UdGOP");  // Substitua pelo seu User ID do EmailJS
+        })();
+    
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            // Substitua pelo seu service ID e template ID do EmailJS
+            emailjs.sendForm('service_l46six2', 'template_fgeoacf', this)
+                .then(function() {
+                    alert('E-mail enviado com sucesso!');
+                }, function(error) {
+                    alert('Erro ao enviar o e-mail:', error);
+                });
+        });
+    </script>
 </body>
 </html>

@@ -362,6 +362,13 @@ footer > p {
     }
 }
 
+@media (min-height: 250px) and (max-height: 594px) {
+    .conteudo-modal {
+        margin: 4% auto;
+        font-size: 0.8em;
+    }
+}
+
 /*------------------------------*/
 /*        modal creditos        */
 /*------------------------------*/

@@ -26,20 +26,18 @@
             border: 2px solid rgba(128, 128, 128, 0.37);
             border-radius: 8px;
             padding: 0px 20px 70px 20px;
-            margin-left: 20%;
-            height: 39vh;
-            max-width: 350px;
+            margin-left: 2%;
+            height: 48vh;
+            max-width: 59%;
             font-family: var(--font1);
         }
 
         .cab-envio {
-            background-color: var(--cor0);
-            color: white;
             border-radius: 8px 8px 0px 2px;
             padding: 10px;
             margin-bottom: 20px;
-            width: 106%;
             transform: translateX(-21px);
+            font-family: var(--font1);
         }
 
         .label {
@@ -48,11 +46,13 @@
             border: 2px solid var(--cor2);
             border-radius: 8px;
             padding: 10px;
+            font-size: 1.2em;
         }
 
         .btn-enviar {
             background-color: #a7cf3a71;
             border: 1px solid var(--cor1);
+            width: 50%;
             border-radius: 8px;
             padding: 10px;
         }
@@ -203,41 +203,15 @@
             }
         }
 
-        @media (max-width: 2560px) and (max-height: 320px) {
-            .envio {
-                height: 89vh;
-                max-width: 800px;
-            }
-        }
-
         @media (max-width: 1534px) {
             .hora {
                 left: 140%;        
             }
         }
 
-        @media (max-width: 1440px) and (max-height: 320px) {
-            .envio {
-                height: 89vh;
-                max-width: 520px;
-                margin-left: 8%;
-            }
-
-            .cab-envio {
-                width: 104%;
-            }
-        }
-
         @media (max-width: 1340px) {
             .hora {
                 left: 100%;        
-            }
-        }
-
-        @media (max-width: 768px) and (max-height: 320px) {
-            .envio {
-                height: 78vh;
-                max-width: 400px;
             }
         }
 
@@ -252,19 +226,21 @@
                 padding-top: 5%;
             }
         }
+
+        /* Responsividade vertical */
+        @media (min-height: 1440px) and (max-height: 3000px) {
+            .envio {
+                height: 80%;
+            }
+        }
+
+        @media (min-height: 320px) and (max-height: 425px) {
+            .envio {
+                height: 78vh;
+            }
+        }
         /* Caixa de envio */
-        @media (max-width: 1293px) {
-            .envio {
-                margin-left: 12%;
-            }
-        }
-
-        @media (max-width: 1160px) {
-            .envio {
-                margin-left: 4%;
-            }
-        }
-
+        
         @media (max-width: 1059px) {
             .envio {
                 margin-left: 1%;
@@ -332,7 +308,11 @@
 
         @media (max-width: 425px) {
             .envio {
-                margin-left: 0;
+                max-width: 90%;                
+            }
+
+            .btn-enviar {
+                width: 360px;
             }
 
             div#loc-li1 {                
@@ -352,13 +332,23 @@
             }
         }
 
-        @media (max-width: 320px) {
-            .cab-envio {
-                width: 108%;
+        @media (max-width: 375px) {
+            .envio {
+                max-width: 90%;                
             }
-            
-            .diretor {
-                width: 200px;
+
+            .btn-enviar {
+                width: 320px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .envio {
+                max-width: 90%;                
+            }
+
+            .btn-enviar {
+                width: 290px;
             }
 
             .local {
@@ -393,13 +383,15 @@
             </div>
             
             <!-- menu responsivo-->
+            <div class="voltar-index">
+                <a href="index.html">Home</a>
+            </div>
             <button id="menu-btn" onclick="openNav()">☰</button>
             <div id="camadas-resp">
                 <ul>
                     <li>
                         <button class="menu-filho" onclick="openClinic()">Clinica ▼</button>
                         <ul id="clinica-resp" class="sub-menu">
-                            <li><a href="index.html">Home</a></li>
                             <li><a href="izi.html">Sobre a IZI</a></li>
                             <li><a href="convenio.html">Convênios</a></li>
                         </ul>
@@ -414,13 +406,9 @@
                         
                     </li>
 
-                    <li>                        
-                        <a href="servico.html">Serviços</a></li>
-                    </li>
+                    <li><a href="servico.html">Serviços</a></li>
 
-                    <li>
-                        <a href="index.html">&#10094; home</a>
-                    </li>
+                    <li><a href="contato.html">Contatos</a></li>
                 </ul>
             </div>
         </nav>

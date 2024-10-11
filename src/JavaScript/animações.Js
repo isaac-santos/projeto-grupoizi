@@ -15,6 +15,10 @@ function animateCSS(element, animation, prefix = 'animate__') {
     });
 }
 
+window.onload = function() {
+    animateCSS('#logo', 'fadeInRightBig');
+};
+
 function openNav(){
     var menu = document.getElementById('camadas-resp');
     
@@ -39,19 +43,25 @@ function openNav(){
 
 function openClinic(){
     var menu = document.getElementById('clinica-resp');
+    var button = document.querySelector('button[onclick="openClinic()"]');
     if (menu.style.display === 'none' || menu.style.display === '') {
         menu.style.display = 'block';
+        button.innerHTML = 'Clinica ▲';
     } else {
         menu.style.display = 'none';
+        button.innerHTML = 'Clinica ▼';
     }
 }
 
 function openTeam(){
     var menu = document.getElementById('equipe-resp');
+    var button = document.querySelector('button[onclick="openTeam()"]');
     if (menu.style.display === 'none' || menu.style.display === '') {
         menu.style.display = 'block';
+        button.innerHTML = 'Equipe ▲';
     } else {
         menu.style.display = 'none';
+        button.innerHTML = 'Equipe ▼';
     }
 }
 

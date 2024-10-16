@@ -204,6 +204,10 @@ button.menu-filho {
     font-weight: bold;
 }
 
+.sub-menu > li {
+    padding-block: 0.1px;
+}
+
 ul.sub-menu > li > a {
     position: relative;
     color: var(--cor2);

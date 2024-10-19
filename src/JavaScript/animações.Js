@@ -53,17 +53,17 @@ function openClinic(){
     }
 }
 
-function openTeam(){
-    var menu = document.getElementById('equipe-resp');
-    var button = document.querySelector('button[onclick="openTeam()"]');
-    if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'block';
-        button.innerHTML = 'Equipe ▲';
-    } else {
-        menu.style.display = 'none';
-        button.innerHTML = 'Equipe ▼';
-    }
-}
+//function openTeam(){
+//    var menu = document.getElementById('equipe-resp');
+//    var button = document.querySelector('button[onclick="openTeam()"]');
+//    if (menu.style.display === 'none' || menu.style.display === '') {
+//        menu.style.display = 'block';
+//        button.innerHTML = 'Equipe ▲';
+//    } else {
+//       menu.style.display = 'none';
+//        button.innerHTML = 'Equipe ▼';
+//    }
+//}
 
 
 document.addEventListener("DOMContentLoaded", function () {

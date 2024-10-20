@@ -12,12 +12,14 @@
             padding: 0px 5%;
         }
 
-        .tratamento {
+        .trata-orient {
             padding-block: 90px 0px;
             padding-left: 5px;
             margin-bottom: 3px;
             background-color: white;
             box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.26);
+            border-left: 1px solid var(--cor0);
+            border-right: 1px solid var(--cor0);
         }
 
         .lista-tratamentos {
@@ -58,6 +60,18 @@
         .img-det {
             border: 1px solid black;
             margin-block: 10px;
+        }
+
+        .detalhes-orient {
+            padding-bottom: 10px;
+        }
+
+        .list-param  {
+            list-style-position: inside;
+        }
+
+        .lista-orient {
+            padding: 8px 0px;
         }
 
         /* Responsividade */
@@ -122,7 +136,7 @@
         <div id="linhaCab" class="animlinha"></div>
     </header>
     <main>
-        <div class="tratamento">
+        <div class="trata-orient">
             <h2>Tratamentos</h2>
             <ul class="lista-tratamentos">
                 <li class="trat-list">Aneurismas Arteriais <span class="seta"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></li>
@@ -351,6 +365,97 @@
                     <img src="src/img/Varizes_foto_real.JPG" alt="imagem Varizes foto real" class="img-det">
 
                     <p>É necessária a avaliação do Angiologista / Cirurgião Vascular para a correta indicação da melhor técnica cirúrgica a ser utilizada em cada caso, a fim de minimizar possíveis complicações relacionadas ao método.</p>
+                </div>
+            </ul>
+            <h2>Orientações</h2>
+            <ul class="lista-tratamentos">
+                <li class="trat-list">Dicas úteis para evitar varizes<span class="seta"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></li>
+
+                <div id="evitar varizes" class="detalhes">
+                    <ol class="list-param">
+                        <li class="lista-orient">Evitar ganhos de peso. Mantenha um peso ideal.</li>
+                        <li class="lista-orient">Hidratação e dieta rica em fibras para evitar a constipação intestinal.</li>
+                        <li class="lista-orient">Procurar não permanecer muito tempo parado em pé ou sentado.</li>
+                        <li class="lista-orient">Realizar caminhadas e/ou exercícios físicos rotineiramente.</li>
+                        <li class="lista-orient">Utilizar meias elásticas diariamente, inclusive durante a gravidez.</li>
+                        <li class="lista-orient">Consulte regularmente seu angiologista/cirurgião vascular.</li>
+                    </ol>                    
+                </div>
+
+                <li class="trat-list">Doença Obstrutiva das Artérias da Perna<span class="seta"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></li>
+
+                <div id="DOAP" class="detalhes">
+                    <ol class="list-param">
+                        <li class="lista-orient"><strong>Parar de fumar</strong> é uma das principais recomendações, pois o tabagismo agrava a aterosclerose e reduz o fluxo sanguíneo para as pernas.</li>
+                        <li class="lista-orient"><strong>Controle de Doenças</strong> Manter a pressão arterial, diabetes e colesterol sob controle.</li>
+                        <li class="lista-orient"><strong>Exercícios</strong> Caminhadas regulares para melhorar a circulação.</li>
+                        <li class="lista-orient"><strong>Cuidados com os Pés</strong>Verificar os pés diariamente e usar calçados adequados.</li>
+                        <li class="lista-orient"><strong>Dieta Saudável</strong>Alimentação balanceada, rica em fibras e baixa em gorduras.</li>
+                        <li class="lista-orient"><strong>Medicamentos</strong>Usar antiplaquetários, vasodilatadores e estatinas conforme prescrição médica.</li>
+                        <li class="lista-orient"><strong>Manter Peso Saudável</strong>Evitar sobrepeso e obesidade.</li>
+                        <li class="lista-orient"><strong>Evitar Longos Períodos em Pé/Sentado</strong>Movimentar-se frequentemente.</li>
+                        <li class="lista-orient"><strong>Acompanhamento Médico</strong>Visitas regulares ao médico vascular.</li>
+                        <li class="lista-orient"><strong>Sinais de Alerta</strong>Procurar ajuda se houver piora na dor, feridas ou mudança de cor nas pernas.</li>
+                    </ol>                    
+                </div>
+
+                <li class="trat-list">Orientações para Pós Operatório de Cirurgia de Varizes<span class="seta"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></li>
+
+                <div id="P-OCV" class="detalhes">
+                    <ol class="list-param">
+                        <li class="lista-orient">Enquanto na cama, faça movimentos de esticar e encolher os pés para bombear o sangue das pernas e evitar trombose da panturrilha.</li>
+                        <li class="lista-orient">No segundo e terceiro dias o repouso deve ser feito da seguinte forma: 40 a 50 minutos deitado(a) alternados com 5 a 10 minutos andando.</li>
+                        <li class="lista-orient">Enquanto em pé não fique parado(a) por tempo prolongado, mova-se, andando normalmente.</li>
+                        <li class="lista-orient">Evite exposição ao sol para não provocar manchas.</li>
+                        <li class="lista-orient">As Ataduras devem ser retiradas após 48h da cirurgia. Os adesivos (micropore) só devem ser retirados no 5º dia.</li>
+                        <li class="lista-orient">Pequenos sangramentos podem ocorrer, não se assuste pois isto é normal, apenas deite com as pernas elevadas e comprima o local por 10 minutos.</li>
+                        <li class="lista-orient">Caso tenha pontos na virilha e/ou tornozelo deverá realizar troca diária deste curativo limpando com soro fisiológico e antisséptico. Não molhar durante o banho nos primeiros 4 dias.</li>
+                        <li class="lista-orient">Após retirar as ataduras, o banho deve ser realizado normalmente, mesmo sobre os locais onde houver cicatrizes. Evitar apenas as áreas citadas no item anterior.</li>
+                        <li class="lista-orient">Os hematomas, o inchaço e a sensação de formigamento podem ocorrer, em geral são normais e tendem a ceder com o tempo.</li>
+                        <li class="lista-orient">Tomar os medicamentos da forma como foi orientada pelo médico.</li>
+                        <li class="lista-orient">Fazer uso da meia elástica conforme orientação médica (Será orientado no dia da revisão).</li>
+                        <li class="lista-orient">Retornar para reavaliação e/ou retirada de pontos no consultório no dia marcado.</li>
+                        <li class="lista-orient">Caso haja necessidade deverá retornar ao hospital ou entrar em contato com seu médico.</li>
+                    </ol>                    
+                </div>
+
+      
+
+                <li class="trat-list">Orientações para Prevenção de Complicações do Pé Diabético<span class="seta"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></li>
+
+                <div id="PD" class="detalhes">
+                    <ol class="list-param">
+                        <li class="lista-orient">Examine os seus pés todos os dias. Verifique se existem bolhas, calos, úlceras, micose entre os dedos ou infecções.</li>
+                        <li class="lista-orient">Passe as mãos dentro de seus sapatos para certificar-se de que não existe nada que possa machucar seu pé.</li>
+                        <li class="lista-orient">Não use sapatos apertados.</li>
+                        <li class="lista-orient">Nunca ande descalço para evitar ferimentos despercebidos.</li>
+                        <li class="lista-orient">Lave bem e diariamente os pés. Nunca deixe de enxugar bem os pés e entre os dedos.</li>
+                        <li class="lista-orient">Não fume. Controle bem o seu açúcar, colesterol e a hipertensão.</li>
+                        <li class="lista-orient">Se apresentar dormência nos pés procure seu médico.</li>
+                        <li class="lista-orient">Corte as unhas com cuidado. Não corte os calos, lixe-os delicadamente e regularmente seguindo orientação médica.</li>
+                        <li class="lista-orient">Evite colocar compressas de água morna ou fria. Em geral seus pés sofrem de diminuição de sensibilidade e isso acarreta riscos de queimaduras por não sentir a temperatura adequadamente.</li>
+                        <li class="lista-orient">Praticar esportes de baixo impacto como hidroginástica e pilates.</li>
+                        <li class="lista-orient">Controlar rigorosamente o peso.</li>
+                        <li class="lista-orient">É importante que você visite seu médico com regularidade.</li>
+                    </ol>                    
+                </div>
+
+                <li class="trat-list">Orientações para Uso de Anticoagulante no Tratamento da Trombose<span class="seta"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></li>
+
+                <div id="" class="detalhes">
+                    <ol class="list-param">
+                        <li class="lista-orient">Repousar com as pernas um pouco elevadas, evitar permanecer em pé por longos períodos e pegar peso em excesso.</li>
+                        <li class="lista-orient">Usar a meia elástica, quando prescrita, conforme orientação médica.</li>
+                        <li class="lista-orient">Evitar comer todos os dias couve, couve-flor, espinafre, nabo, brócolis, folhas verdes em grandes quantidades.</li>
+                        <li class="lista-orient">Realizar o controle ambulatorial do RNI, realizando o exame de sangue nos intervalos conforme orientado.</li>
+                        <li class="lista-orient">Não pare ou modifique a dose do anticoagulante por conta própria.</li>
+                        <li class="lista-orient">Tomar o anticoagulante todos os dias no mesmo horário, preferencialmente no final da tarde, conforme orientação e dosagem prescritas na receita médica.</li>
+                        <li class="lista-orient">Não utilizar medicamentos sem ordem médica, sempre informando ao médico o uso de anticoagulante. Alguns medicamentos devem der evitados tais como: AAS, antiinflamatórios, corticoide, medicamentos injetáveis por via intramuscular e medicamentos caseiros a menos que tenha autorização médica. Em caso de dor ou febre usar Dipirona ou Paracetamol.</li>
+                        <li class="lista-orient">Cuidado para não se cortar ou sofrer traumatismos pelo corpo, pois é grande a possibilidade de evoluir com hematomas, hemorragias graves ou outras complicações.</li>
+                        <li class="lista-orient">Em caso de pequenos cortes com sangramento, comprimir a ferida por 10 a 15 minutos.</li>
+                        <li class="lista-orient">Ficar atento ao aparecimento espontâneo de hematomas no corpo ou sangramento. Caso isto ocorra, procurar imediatamente o Pronto Socorro e comunicar a equipe de plantão sobre o uso do anticoagulante.</li>
+                        <li class="lista-orient">Qualquer dúvida entre em contato com seu Cirurgião Vascular.</li>
+                    </ol>                    
                 </div>
             </ul>
         </div>

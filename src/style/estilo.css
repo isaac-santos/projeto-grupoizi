@@ -910,11 +910,12 @@ footer > p {
 /* botão */
 .btnabrirmodal {
     width: 100px;
-    border: 1px solid var(--cor1);
+    border: 3px solid var(--cor1);
     border-radius: 9px;
     padding: 2px;
     cursor: pointer;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 
 .btnabrirmodal:hover {
